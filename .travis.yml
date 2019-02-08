@@ -22,7 +22,7 @@ addons:
 #  – chmod +x mvnw
 install:
   #Preparation
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+  - mvn clean install
 
 script:
   #Code are clean?
