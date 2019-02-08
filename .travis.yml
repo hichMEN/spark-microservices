@@ -23,6 +23,13 @@ addons:
 install:
   #Preparation
   - mvn clean install
+  -
+#TODO: replace scripts with jobs and stages
+stages:
+  - sourceQuality
+  - compile
+  - test
+  - deploy
 
 script:
   #Code are clean?
@@ -35,6 +42,7 @@ script:
   #unit tests pass
   #integration tests pass
   #run
+  - mvn clean install
   - mvn spring-boot:run
 after_success:
   - docker login -u $DOCKER_USER -p $DOCKER_PASS
