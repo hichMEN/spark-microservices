@@ -22,7 +22,8 @@ addons:
 #  – chmod +x mvnw
 
 script:
-  - chmod +x ./mvnw clean install -B
+  - chmod +x ./mvnw clean install
+#  - mvn spring-boot:run
 #  - chmod +x ./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
 #  - chmod +x mvn sonar:sonar \
 #    -Dsonar.projectKey=hichMEN_spark-microservices \
