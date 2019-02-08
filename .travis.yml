@@ -23,12 +23,12 @@ addons:
 
 script:
   - chmod +x ./mvnw clean install -B
-  - chmod +x ./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
-  - chmod +x mvn sonar:sonar \
-    -Dsonar.projectKey=hichMEN_spark-microservices \
-    -Dsonar.organization=hichmen-github \
-    -Dsonar.host.url=https://sonarcloud.io \
-    -Dsonar.login=df67bcc10584f3351440da7c9433c5d2927e669d
+#  - chmod +x ./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
+#  - chmod +x mvn sonar:sonar \
+#    -Dsonar.projectKey=hichMEN_spark-microservices \
+#    -Dsonar.organization=hichmen-github \
+#    -Dsonar.host.url=https://sonarcloud.io \
+#    -Dsonar.login=df67bcc10584f3351440da7c9433c5d2927e669d
 
 after_success:
   - docker login -u $DOCKER_USER -p $DOCKER_PASS
