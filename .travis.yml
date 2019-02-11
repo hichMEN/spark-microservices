@@ -3,20 +3,20 @@ language: java
 jdk: oraclejdk8
 dist: trusty
 
-services:
-  - docker
-
-env:
-  global:
-     - secure: "encrypted-sonar-token"
-     - secure: "encrypted-dockerhub-username"
-     - secure: "encrypted-dockerhub-password"
-     - secure: "encrypted-heroku-api-key"
-addons:
-  sonarcloud:
-    organization: "hichmen-github"
-    token:
-      secure: $SONAR_TOKEN
+#services:
+#  - docker
+#
+#env:
+#  global:
+#     - secure: "IBkReognc8+6xkyWLPRaN2dbfF0OwAzuzssN8z+9leRvuWFmHvxa9GZ32yM8ZS7deHGnUc3KUkvvSo2vvHqLLVCSC1riF0MZg8noP9fZWebaIwlnHJo7eg3A0CzHpO2xFWlpUch3CRWVFpYmNI9tFpI8Yo7RUXkL5BtzFecQxQlPNP64vo3w/A31N5WOd2PY6BLdNauNmNKvYIIUKCLp0pKvX1Q1/lu7D2C8PzPflHKKJOQlYS/Pxe5A+sWqu6rIltzY2U1Cq4bkfzdY1xij4RiGIk4/lvoU7mmGXPi+bx100oPsmEbZO0iOvoeA6SZ/pbiBuiIEdDw6zg3qmTFPeWy/BnQZ153pdy+UQ7FUEZWuyumHkZ0yk2rqZq7FwcrU+JC4w+RYOTOPIc58gHgxdunwxnCkDVV92ZFYOxUGN7sTh7SURAcdZWH/UpvygVAAz7r2cjV2IU7fB7ppg+6QEtSD0IgFqLeTzzm5Mhjo0rxJzgjjgWhGX05cXv0i8e+/ymEh5cueR2JwCsE580p1MmthYv+hMNO/HQyxxCHKG8O63ZCbiVI2XCuv1+3/mPZYpS0Fb0l9IXWpKkeFNuKeSr1mmI43xlTVpjqU7E+yZJLY/2QIu/zildpaGRwt2rYLd4AuTWXZZQ9Q9DDFd+KcQ6RYNN+kduFz4VzL/Y0ztDg="
+#     - secure: "v1UkdJatF6wG3EKe4HVwj4qlxGyI5lYNyLEBSOCH/LynDPtad3h8uC15geDFgMAtWrXLalYEWtOPap2F0uJQwoLvT5CdytLedF7YmnHMcu4Th+m4BkAB/8jD/UiUEWcmag7PyD+1zAC19RTDhDq4gmUQvry5KMejQ9NEMY64N31HP/TuRy4nf6R8MebgK+MEr/PqgrNo/Bv2PbUFeguwkLK0tGxN73PS8BCeXsPfooh8EzIFshYsulOcSH9mTvKEJwenYdf6uABh1gFH7Ae+aW2+GsLAH3vfNEpBBzMUtLSposyzIAvXMNPsPTcL4MvM8erLTqeeKO09Tf+UmyJ2CipNkiQ+WQ7CxPMou2J6gLrDVLjDXYY0CjAnmCVosILicKRPPSDv8Bz32zHVPnyOh+bcGDNyFHg267Onj+jWdCNEFyzWz4LIaDfYmuFCzwWF1WbwuAv02WnrF5UuM60vaoYw66dzFqGrjMgaV9GVbgqDMLszK5H1dJcR4ED91TeWUJzMgIhurCrYE1d25/n37fVoJsb/9IuKDMeZ0ASofma2Qdkh3Yxp2toaq/3S34RWhla6ckxp/wzB7eHwdmVmAT+hzO2SBtZTQQcx3L5Sy0fe5Ap8gM51TwLE11kofH38riKVl+47o/MsQzVuRHLkTxzKFr8QdGaH4S/MIBd6o0Q="
+#     - secure: "FG4Rs98tvVnj3a1qJs7INCG8jzkUZJFALXJzilasv/J6WzQd7xRMu7/RyPjKiNVAbCkBMKs/KFSpA+hjz+OrHqZP7jbC0NsYW41E/IeOMwLBuqo7+dsDGeGn6/wlwXV9y0rEJKI55H49WG3zAxd09f8Fdp1zM9V1W6Ndiv3p/Xak8fLQnFAsrEKExdatr7BVumDrfndF5o7NM7B0if1XubXdMbRJEQL5aBqMFfsZcrx8ueY7fNqwOhkbcKu8OklmvLGGzhwcIx4YnZgkexpvbOvh0pBrM/GRy7AI7nC8euywgjLC8az41CGZUFKjAAYXyKBZvjP5Qknb3PLt5CTxJBoBSca4ipz8i35y2jjoAonlc3AilA4gzPfyH0D8ZyOfM5+/B34bFJhExOxtrYtJ8GdwlhcJ2d49JyKDShZllUHBYZbMnoMcSZNQE+bpLLw8O9Hoylg0TXspTz2CE6o8gHFP06+Q6qjXgj1Wo2n2ZzXuosczG607gVKKAgbrah/6/paqZ2gVk18y2Awb5/QJXTDTGy8JOR3uIQg+yLDeHERuon+nXPfu32EmeMIzWbwz4xci/Myi8SoOveYPlNI37Rj8/2JBr/vSNN/bXV0UF9xr/8hfMdZlJwFJNwKLb0geggew4HvQWg8CLMqQ250Hw6esoEc5VrWcq1R6j/4La7o="
+#     - secure: "encrypted-heroku-api-key"
+#addons:
+#  sonarcloud:
+#    organization: "hichmen-github"
+#    token:
+#      secure: $SONAR_TOKEN
 
 #before_install:
 #  – chmod +x mvnw
@@ -24,12 +24,12 @@ install:
   #Preparation
   - mvn clean install
   -
-#TODO: replace scripts with jobs and stages
-stages:
-  - sourceQuality
-  - compile
-  - test
-  - deploy
+##TODO: replace scripts with jobs and stages
+#stages:
+#  - sourceQuality
+#  - compile
+#  - test
+#  - deploy
 
 script:
   #Code are clean?
@@ -44,14 +44,13 @@ script:
   #run
   - mvn clean install
   - mvn spring-boot:run
-after_success:
-  - docker login -u $DOCKER_USER -p $DOCKER_PASS
-  - export IMAGE_NAME=spark-microservices
-  - docker build -t $IMAGE_NAME:$COMMIT .
-  - docker tag $IMAGE_NAME:$COMMIT $IMAGE_NAME:$TAG
-  - docker push $IMAGE_NAME
-
-deploy:
-  provider: heroku
-  api_key: $HEROKU_API_KEY
-  app: spark-microservices
+#after_success:
+#  - docker login -u $DOCKER_USER -p $DOCKER_PASS
+#  - export IMAGE_NAME=spark-microservices
+#  - docker build -t $IMAGE_NAME:$COMMIT .
+#  - docker tag $IMAGE_NAME:$COMMIT $IMAGE_NAME:$TAG
+#  - docker push $IMAGE_NAME
+#
+#deploy:
+#  provider: heroku
+#  app: spark-microservices
