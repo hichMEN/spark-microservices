@@ -135,7 +135,7 @@
                 </configuration>
             </plugin>
 
-            <!-- coverage-->
+           <!-- &lt;!&ndash; coverage&ndash;&gt;
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -181,7 +181,7 @@
                 </executions>
             </plugin>
 
-            <!--integration tests-->
+           &lt;!&ndash;integration tests&ndash;&gt;
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
@@ -199,11 +199,11 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 
-    <repositories>
+   <!-- <repositories>
         <repository>
             <id>spring-snapshots</id>
             <name>Spring Snapshots</name>
@@ -240,6 +240,6 @@
             <id>spring-releases</id>
             <url>https://repo.spring.io/libs-release</url>
         </pluginRepository>
-    </pluginRepositories>
+    </pluginRepositories>-->
 
 </project>
