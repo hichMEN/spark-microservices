@@ -42,7 +42,7 @@ script:
   #unit tests pass
   #integration tests pass
   #run
-  - mvn clean install
+#  - mvn clean install
   - mvn spring-boot:run
 #after_success:
 #  - docker login -u $DOCKER_USER -p $DOCKER_PASS
